@@ -227,7 +227,7 @@ class GeoZoneCheckGermany:
                 tform = QgsCoordinateTransform(flightpathCrs, destCrs, QgsProject.instance())
                 ext = tform.transform(ext)
             #vlayers for results
-            conflicts=QgsVectorLayer('Polygon','conflicts','memory')
+            conflicts=QgsVectorLayer('Polygon','Intersecting Geo-Zones','memory')
             conflictsprov=conflicts.dataProvider()
             conflictsprov.addAttributes([
                 QgsField("type", QVariant.String),
@@ -236,7 +236,7 @@ class GeoZoneCheckGermany:
             conflicts.setCrs(destCrs)
             conflicts.updateFields()
             conflictlist=[]
-            closeby=QgsVectorLayer('Polygon','closeby','memory') 
+            closeby=QgsVectorLayer('Polygon','Closeby Geo-Zones','memory') 
             closebyprov=closeby.dataProvider()
             closebyprov.addAttributes([
                 QgsField("type", QVariant.String),
