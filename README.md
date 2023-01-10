@@ -4,3 +4,5 @@ Plugin for QGIS that checks a given vector layer with planned flight paths/fligh
 Known issues: Running this plugin can take 1-2 minutes, getting no response during this time isn't unusual. 
 
 Source for geodata: DFS, BKG [2022] via www.dipul.de and their WMS service.
+
+Contact me for suggestions etc. at jannis.midasch@midasch-geovis.de
