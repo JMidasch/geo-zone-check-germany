@@ -5,4 +5,3 @@ Known issues: Running this plugin can take up to 1-2 minutes, getting no respons
 
 Source for geodata: DFS, BKG [2022] via www.dipul.de and their WMS service.
 
-Contact me for suggestions etc. at jannis.midasch@midasch-geovis.de
